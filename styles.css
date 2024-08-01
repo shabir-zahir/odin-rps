@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin : 0px;
+    padding: 0px;
+    background-color: white;
+    filter:blur();
+
+
+}
+.game{
+    margin : 0px;
+    padding: 0px;
+    background-color:white;
+    filter:blur();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.score{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+}
+
+.ai .score{
+    align-self: start;
+}
+
+.user .score{
+    align-self: flex-end;
+}
+
+.player{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.rock, .paper, .scissor{
+    height: 150px;
+    width: 180px;
+    border:5px solid black;
+}
+
+img{
+    height:100%;
+    width: 100%;
+}
+.ai > .choice > .rock > img, .ai > .choice > .paper > img, .ai > .choice > .scissor > img{
+    transform: rotate(180deg);
+}
+
+.result{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 20px;
+    font-size: 5em;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(247, 0, 0, 0.5);
+
+}
+h1{
+    color: aliceblue;
+}
+
+.restart{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color:  black;
+    top: 0%;
+    left: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    opacity: .5;
+    z-index: 1;
+    display: flex;
+
+}
+
+.hide{
+    display: none;
+}
+
+
+.end-text{
+    margin: 40px;
+    font-size: xx-large;
+}
+
+
+.restart-button{
+    background-color: hsl(0, 0%, 100%);
+    width: 150px;
+    height: 60px;
+    color: rgb(5, 4, 4);
+    border:none;
+    opacity:1000;
+    font-size: larger;
+}

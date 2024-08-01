@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor </title>
+    <link rel = "stylesheet" href = "styles.css">
+  </head>
+  <body>
+    <div container = "game">
+      <div class = "ai score">
+          <h1> COMPUTER SCORE: </h1>
+          <h1 class = "ai score-count"> 0</h1>
+      </div>
+      <div class = "ai player">
+          <div class = "choice">
+              <button class = "rock"><img src = "./images/rock.png"></button>
+              <button class = "paper"><img src = "./images/paper.jpg"></button>
+              <button class = "scissor"><img src = "./images/scissor.png "></button>
+          </div>
+      </div>
+
+      <div class = "user player">
+          <div class = "choice">
+              <button class = "rock obj"><img src = "./images/rock.png"></button>
+              <button class = "paper obj"><img src = "./images/paper.jpg"></button>
+              <button class = "scissor obj"><img src = "./images/scissor.png "></button>
+          </div>
+      </div>
+      <div class = "user score">
+          <h1> YOUR SCORE: </h1>
+          <h1 class="user score-count"> 0</h1>
+      </div>
+    </div>
+    <div class = "result">
+    </div>
+
+    <div class="restart hide">
+      <h1 class = "end-text"></h1>
+      <button class="restart-button"> RESTART</button>
+    </div>
+    <script src = "js-file.js" defer ></script>
+
+  </body>
+
+</html>
